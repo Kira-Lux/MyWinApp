@@ -17,7 +17,7 @@ namespace ThunghiemNeon
             using var db = new Npgsql.NpgsqlConnection(_connString);
             db.Open();
 
-            MessageBox.Show("Kết nối Neon thành công!");
+            MessageBox.Show("Kết nối Neon thành công");
 
             using var cmd = new NpgsqlCommand("CREATE SEQUENCE IF NOT EXISTS neon_auth.test_seq START 1", db);
             cmd.ExecuteNonQuery();
